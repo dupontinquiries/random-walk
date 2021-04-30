@@ -140,7 +140,7 @@ def main(n_iter):
     #        processes[j].join()
 
     labels = [[0, 0, 0]]
-    max_height = 280#140
+    max_height = 70#280#140
 
     # az = 9 el = 31
     # k base
@@ -160,22 +160,23 @@ def main(n_iter):
             for i in range(n_iter)]
         concurrent.futures.wait(futures)
 
-    x = list()
-    y = list()
-    z = list()
+    #x = list()
+    #y = list()
+    #z = list()
     #print(futures)
     count = 0
     point_set = set()
     line_set = set()
+    #print("\n\n\n Without lists \n\n\n")
     for f in futures:
         path = f.result()
         for i in range(len(path) - 1):
             line_set.add(Line(path[i], path[i+1]))
             #main_ax.plot( [path[i].x, path[i+1].x], [path[i].y, path[i+1].y], [path[i].z, path[i+1].z], color = 'g' )
         for point in path:
-            x.append(point.x)
-            y.append(point.y)
-            z.append(point.z)
+            #x.append(point.x)
+            #y.append(point.y)
+            #z.append(point.z)
             point_set.add(point)
 
     num_walks = n_iter
@@ -268,11 +269,3 @@ if __name__ == "__main__":
          # create connecting lines
     #    if show_paths:
     #        main_ax.plot([all_data[i][0], all_data[i+1][0]],[all_data[i][1], all_data[i+1]][1],[all_data[i][2], all_data[i+1]][2], color = 'g')
-
-text = """
-
-cd desktop/random walk
-activate rocket
-python rw.py
-
-"""
