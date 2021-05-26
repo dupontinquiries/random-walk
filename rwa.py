@@ -210,6 +210,7 @@ def main(n_iter):
     #mng.window.showMaximized()
     mng = plt.get_current_fig_manager()
     mng.full_screen_toggle()
+    ##########animation = FuncAnimation(main_fig, update, interval=10)
     plt.show()
 
 
@@ -258,6 +259,8 @@ if __name__ == "__main__":
     import time
     from datetime import datetime
     import secrets
+
+    from matplotlib.animation import FuncAnimation
 
     main(n_iter)
 
