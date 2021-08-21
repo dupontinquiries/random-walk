@@ -146,7 +146,7 @@ def main(n_iter):
     #        processes[j].join()
 
     labels = [[0, 0, 0]]
-    max_height = 70#280#140
+    max_height = 560#70#280#140
 
     # az = 9 el = 31
     # k base
@@ -223,7 +223,7 @@ if __name__ == "__main__":
     step_size = 1 # change for more paths
 
     n_iter = 1#5#10#20#400
-    path_length = 12#145#5#20#240#65
+    path_length = 56#12#145#5#20#240#65
 
     num_chains = 1
     percent_bond_step_length = 1.0
