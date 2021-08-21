@@ -6,7 +6,7 @@ KRW is a small coding project that creates randomly generated paths in 3d space.
 
 ## Photos
 
-A fun photo of a backwards K.
+<img src="image-20210821173830721.png" alt="A fun photo of a backwards K." style="zoom: 67%;" />
 
 ## Optimizations
 
